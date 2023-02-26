@@ -45,6 +45,6 @@ table td {
   flex-direction: column;
   align-items: stretch;
 body {
-  background-image: url("background.jpeg");
+  background-image: url("url('https://cdn.pngtree.com/thumb_back/fw800/back_our/20190619/ourmid/pngtree-cute-hand-drawn-style-mathematics-education-pink-background-image_117671.jpg')");
   background-size: cover;
 }
