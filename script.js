@@ -41,3 +41,15 @@ form.addEventListener("submit", function (event) {
   event.preventDefault();
   checkAnswers();
 });
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}function toggleMenu() {
+  var menu = document.querySelector(".navbar-menu");
+  menu.classList.toggle("is-active");
+}
