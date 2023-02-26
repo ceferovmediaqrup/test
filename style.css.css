@@ -10,16 +10,17 @@ body {
 
 }
 
-  .header {
-  color: white;
-}
-
-
 
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 }
 
 h1 {
