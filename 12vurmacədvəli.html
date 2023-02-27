@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<input type="hidden" id="table" value="12>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>12-nin vurma cədvəli</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="countdown"></div>
+<script type="text/javascript">
+		var countDownDate = new Date().getTime() + 22000;
+		var x = setInterval(function() {
+        var now = new Date().getTime();
+		var distance = countDownDate - now;
+
+			
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			
+			document.getElementById("countdown").innerHTML = minutes + seconds + " saniyə qaldı.";
+
+			
+			if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("countdown").innerHTML = "Vaxt bitdi!";
+				document.getElementById("alarm").play();
+			}
+		}, 1000);
+	</script>
+	
+	<audio id="alarm" src="alarm.mp3"></audio>
+<style>
+body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+<center>
+  <div class="container">
+    <h1>12-nin vurma cədvəli.</h1>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th>Cavabı yaz</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>12 x 1</td>
+          <td>=</td>
+          <td><input type="text" size="1" </td>
+        </tr>
+        <tr>
+          <td>12 x 2</td>
+          <td>=</td>
+          <td><input type="text" size="1"</td>
+        </tr>
+        <tr>
+          <td>12 x 3</td>
+          <td>=</td> 
+          <td><input type="text" size="1"</td>
+        </tr>
+        <tr>
+          <td>12 x 4</td>
+          <td>=</td>
+          <td><input type="text" size="1"</td>
+        </tr>
+        <tr>
+          <td>12 x 5</td>
+          <td>=</td>
+          <td><input type="text" size="1"</td>
+        </tr>
+        <tr>
+          <td>12 x 6</td>
+          <td>=</td>
+          <td><input type="text" size="1"</td>
+        </tr>
+        <tr>
+          <td>12 x 7</td>
+          <td>=</td>
+          <td><input type="text" size="1"</td>
+        </tr>
+        <tr>
+          <td>12 x 8</td>
+          <td>=</td>
+          <td><input type="text" size="1"</td>
+        </tr>
+        <tr>
+          <td>12 x 9</td>
+          <td>=</td>
+          <td><input type="text" size="1"</td>
+        </tr>
+        <tr>
+          <td>12 x 10</td>
+          <td>=</td>
+          <td><input type="text" size="1"</td>
+        </tr>
+		 <tr>
+          <td>12 x 11</td>
+          <td>=</td>
+          <td><input type="text" size="1"</td>
+        </tr>
+		 <tr>
+          <td>12 x 12</td>
+          <td>=</td>
+          <td><input type="text" size="1"</td>
+        </tr>
+      </tbody>
+    </table>
+    <form>
+	 <ul><input type="submit" value="Testi Yoxla"></ul>
+     </form>
+    <div class="feedback">
+      <p>Həll etdiyin dorğu cavabların sayı: <span id="correct"></span></p>
+      <p>Eybi yox növbəti dəfə daha az yalnış edərsən: <span id="incorrect"></span></p>
+      <p>Həll olunmayan cavabların sayı: <span id="skipped"></span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</center>
+</html>
+
+
